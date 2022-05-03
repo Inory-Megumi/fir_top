@@ -1,0 +1,37 @@
+****************************************
+Report : disable_timing
+Design : fir_top
+Version: K-2015.06
+Date   : Tue May  3 11:49:25 2022
+****************************************
+
+Flags :     c  case-analysis
+            C  Conditional arc
+            d  default conditional arc
+            f  false net-arc
+            l  loop breaking
+            L  db inherited loop breaking
+	    m  mode
+            p  propagated constant
+            u  user-defined
+            U  User-defined library arcs
+
+Cell or Port                From    To      Sense           Flag  Reason
+--------------------------------------------------------------------------------
+my_jtag_tap_state_reg_2_    CDN     CDN     clock_pulse_width_low
+                                                            p     CDN = 1
+my_jtag_tap_state_reg_2_    CDN     Q       clear_low       p     CDN = 1
+my_jtag_tap_state_reg_2_    CDN     SDN     removal_rise_clk_rise
+                                                            p     CDN = 1
+my_jtag_tap_state_reg_2_    CDN     SDN     recovery_rise_clk_rise
+                                                            p     CDN = 1
+my_jtag_tap_state_reg_2_    CP      CDN     removal_rise_clk_rise
+                                                            p     CDN = 1
+my_jtag_tap_state_reg_2_    CP      CDN     recovery_rise_clk_rise
+                                                            p     CDN = 1
+my_jtag_tap_state_reg_2_    SDN     CDN     removal_rise_clk_rise
+                                                            p     CDN = 1
+my_jtag_tap_state_reg_2_    SDN     CDN     recovery_rise_clk_rise
+                                                            p     CDN = 1
+
+1

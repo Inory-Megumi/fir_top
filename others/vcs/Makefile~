@@ -1,0 +1,4 @@
+sim:
+	vcs  *.v -top tb_top -debug_all -R -gui -timescale=1ns/1ps -negdelay +neg_tchk  -l run.log
+
+

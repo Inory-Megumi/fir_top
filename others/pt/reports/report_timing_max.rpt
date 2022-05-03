@@ -1,0 +1,161 @@
+Warning: Derate summary report is only shown for full_clock_expanded paths. (UITE-431)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-input_pins
+	-nets
+	-slack_lesser_than 0.0000
+	-max_paths 1000
+	-transition_time
+	-capacitance
+	-crosstalk_delta
+	-derate
+	-sort_by slack
+Design : fir_top
+Version: K-2015.06
+Date   : Tue May  3 11:49:25 2022
+****************************************
+
+
+  Startpoint: w_rstn (input port clocked by w_clk)
+  Endpoint: my_jtag_tdo_t_reg
+               (recovery check against falling-edge clock w_clk)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                              Fanout   Cap    DTrans   Trans    Derate   Delta     Incr       Path
+  ----------------------------------------------------------------------------------------------------------
+  clock w_clk (rise edge)                                                               0.0000     0.0000
+  clock network delay (propagated)                                                      0.0000     0.0000
+  input external delay                                                                  2.5000     2.5000 r
+  w_rstn (in)                                                0.0000                     0.0000     2.5000 r
+  w_rstn (net)                        14   0.0221 
+  U316/I (BUFFD0GHVT)                               0.0000   0.0000   1.0000   0.0000   0.0000     2.5000 r
+  U316/Z (BUFFD0GHVT)                                        0.2417   1.0000            0.1493     2.6493 r
+  n481 (net)                          11   0.0186 
+  U539/I (BUFFD0GHVT)                               0.0000   0.2417   1.0000   0.0000   0.0000     2.6493 r
+  U539/Z (BUFFD0GHVT)                                        0.2649   1.0000            0.1899     2.8392 r
+  n474 (net)                          11   0.0205 
+  my_jtag_tdo_t_reg/CDN (DFNCND1GHVT)               0.0000   0.2649   1.0000   0.0000   0.0000     2.8392 r
+  data arrival time                                                                                2.8392
+
+  clock w_clk (fall edge)                                                               1.0000     1.0000
+  clock network delay (propagated)                                                      0.0000     1.0000
+  clock reconvergence pessimism                                                         0.0000     1.0000
+  my_jtag_tdo_t_reg/CPN (DFNCND1GHVT)                                                              1.0000 f
+  library recovery time                                               1.0000            0.0484     1.0484
+  data required time                                                                               1.0484
+  ----------------------------------------------------------------------------------------------------------
+  data required time                                                                               1.0484
+  data arrival time                                                                               -2.8392
+  ----------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                -1.7908
+
+
+  Startpoint: w_rstn (input port clocked by w_clk)
+  Endpoint: my_jtag_IR_reg_1_
+               (recovery check against falling-edge clock w_clk)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                              Fanout   Cap    DTrans   Trans    Derate   Delta     Incr       Path
+  ----------------------------------------------------------------------------------------------------------
+  clock w_clk (rise edge)                                                               0.0000     0.0000
+  clock network delay (propagated)                                                      0.0000     0.0000
+  input external delay                                                                  2.5000     2.5000 r
+  w_rstn (in)                                                0.0000                     0.0000     2.5000 r
+  w_rstn (net)                        14   0.0221 
+  U316/I (BUFFD0GHVT)                               0.0000   0.0000   1.0000   0.0000   0.0000     2.5000 r
+  U316/Z (BUFFD0GHVT)                                        0.2417   1.0000            0.1493     2.6493 r
+  n481 (net)                          11   0.0186 
+  U539/I (BUFFD0GHVT)                               0.0000   0.2417   1.0000   0.0000   0.0000     2.6493 r
+  U539/Z (BUFFD0GHVT)                                        0.2649   1.0000            0.1899     2.8392 r
+  n474 (net)                          11   0.0205 
+  my_jtag_IR_reg_1_/CDN (DFNCND1GHVT)               0.0000   0.2649   1.0000   0.0000   0.0000     2.8392 r
+  data arrival time                                                                                2.8392
+
+  clock w_clk (fall edge)                                                               1.0000     1.0000
+  clock network delay (propagated)                                                      0.0000     1.0000
+  clock reconvergence pessimism                                                         0.0000     1.0000
+  my_jtag_IR_reg_1_/CPN (DFNCND1GHVT)                                                              1.0000 f
+  library recovery time                                               1.0000            0.0484     1.0484
+  data required time                                                                               1.0484
+  ----------------------------------------------------------------------------------------------------------
+  data required time                                                                               1.0484
+  data arrival time                                                                               -2.8392
+  ----------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                -1.7908
+
+
+  Startpoint: w_rstn (input port clocked by w_clk)
+  Endpoint: my_jtag_IR_reg_0_
+               (recovery check against falling-edge clock w_clk)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                              Fanout   Cap    DTrans   Trans    Derate   Delta     Incr       Path
+  ----------------------------------------------------------------------------------------------------------
+  clock w_clk (rise edge)                                                               0.0000     0.0000
+  clock network delay (propagated)                                                      0.0000     0.0000
+  input external delay                                                                  2.5000     2.5000 r
+  w_rstn (in)                                                0.0000                     0.0000     2.5000 r
+  w_rstn (net)                        14   0.0221 
+  U316/I (BUFFD0GHVT)                               0.0000   0.0000   1.0000   0.0000   0.0000     2.5000 r
+  U316/Z (BUFFD0GHVT)                                        0.2417   1.0000            0.1493     2.6493 r
+  n481 (net)                          11   0.0186 
+  U539/I (BUFFD0GHVT)                               0.0000   0.2417   1.0000   0.0000   0.0000     2.6493 r
+  U539/Z (BUFFD0GHVT)                                        0.2649   1.0000            0.1899     2.8392 r
+  n474 (net)                          11   0.0205 
+  my_jtag_IR_reg_0_/CDN (DFNCND1GHVT)               0.0000   0.2649   1.0000   0.0000   0.0000     2.8392 r
+  data arrival time                                                                                2.8392
+
+  clock w_clk (fall edge)                                                               1.0000     1.0000
+  clock network delay (propagated)                                                      0.0000     1.0000
+  clock reconvergence pessimism                                                         0.0000     1.0000
+  my_jtag_IR_reg_0_/CPN (DFNCND1GHVT)                                                              1.0000 f
+  library recovery time                                               1.0000            0.0484     1.0484
+  data required time                                                                               1.0484
+  ----------------------------------------------------------------------------------------------------------
+  data required time                                                                               1.0484
+  data arrival time                                                                               -2.8392
+  ----------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                -1.7908
+
+
+  Startpoint: w_rstn (input port clocked by w_clk)
+  Endpoint: my_jtag_tdo_o_reg
+               (recovery check against falling-edge clock w_clk)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                              Fanout   Cap    DTrans   Trans    Derate   Delta     Incr       Path
+  ----------------------------------------------------------------------------------------------------------
+  clock w_clk (rise edge)                                                               0.0000     0.0000
+  clock network delay (propagated)                                                      0.0000     0.0000
+  input external delay                                                                  2.5000     2.5000 r
+  w_rstn (in)                                                0.0000                     0.0000     2.5000 r
+  w_rstn (net)                        14   0.0221 
+  U316/I (BUFFD0GHVT)                               0.0000   0.0000   1.0000   0.0000   0.0000     2.5000 r
+  U316/Z (BUFFD0GHVT)                                        0.2417   1.0000            0.1493     2.6493 r
+  n481 (net)                          11   0.0186 
+  U539/I (BUFFD0GHVT)                               0.0000   0.2417   1.0000   0.0000   0.0000     2.6493 r
+  U539/Z (BUFFD0GHVT)                                        0.2649   1.0000            0.1899     2.8392 r
+  n474 (net)                          11   0.0205 
+  my_jtag_tdo_o_reg/CDN (DFNCND1GHVT)               0.0000   0.2649   1.0000   0.0000   0.0000     2.8392 r
+  data arrival time                                                                                2.8392
+
+  clock w_clk (fall edge)                                                               1.0000     1.0000
+  clock network delay (propagated)                                                      0.0000     1.0000
+  clock reconvergence pessimism                                                         0.0000     1.0000
+  my_jtag_tdo_o_reg/CPN (DFNCND1GHVT)                                                              1.0000 f
+  library recovery time                                               1.0000            0.0484     1.0484
+  data required time                                                                               1.0484
+  ----------------------------------------------------------------------------------------------------------
+  data required time                                                                               1.0484
+  data arrival time                                                                               -2.8392
+  ----------------------------------------------------------------------------------------------------------
+  slack (VIOLATED)                                                                                -1.7908
+
+
+1

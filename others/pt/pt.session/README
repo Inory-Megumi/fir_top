@@ -1,0 +1,26 @@
+-------------------------------------------------------
+
+PrimeTime save_session README file
+
+-------------------------------------------------------
+
+PrimeTime Version: 
+	K-2015.06 for linux64 -- May 21, 2015
+Save Session Date:
+	Tue May  3 11:49:25 2022
+ 
+-------------------------------------------------------
+
+Command log of this session is saved in "cmd_log".
+If the saved session is moved to a different location, 
+    please update the paths in the cmd_log file accordingly, 
+    in order to use the GCA in-design flow.
+-------------------------------------------------------
+
+Current Design: fir_top
+
+Technology librares referenced by this session:
+/opt/Foundary_Library/TSMC65/tcbn65lpghvt_130b_ccs/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65lpghvt_130b/tcbn65lpghvttc_ccst.db     tcbn65lpghvttc_ccst.db
+/opt/Foundary_Library/TSMC65/tcbn65lpg_130b_ccs/TSMCHOME/digital/Front_End/timing_power_noise/CCS/tcbn65lpg_130b/tcbn65lpgtc_ccst.db     tcbn65lpgtc_ccst.db
+/opt/Foundary_Library/TSMC65/tphn65lpgv2od3_sl_140a_nldm/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tphn65lpgv2od3_sl_140a/tphn65lpgv2od3_sltc.db     tphn65lpgv2od3_sltc.db
+-------------------------------------------------------

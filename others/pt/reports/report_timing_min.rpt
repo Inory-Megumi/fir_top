@@ -1,0 +1,22 @@
+Warning: Derate summary report is only shown for full_clock_expanded paths. (UITE-431)
+****************************************
+Report : timing
+	-path_type full
+	-delay_type min
+	-input_pins
+	-nets
+	-slack_lesser_than 0.0000
+	-max_paths 1000
+	-transition_time
+	-capacitance
+	-crosstalk_delta
+	-derate
+	-sort_by slack
+Design : fir_top
+Version: K-2015.06
+Date   : Tue May  3 11:49:25 2022
+****************************************
+
+No paths with slack less than 0.0000.
+
+1

@@ -1,0 +1,21 @@
+Information: Checked out license 'PrimeTime-SI' (PT-019)
+Information: Starting crosstalk aware static noise analysis. (NOISE-014)
+****************************************
+Report : noise
+	-all_violators
+	-nosplit
+	-low
+	-above
+Design : fir_top
+Version: K-2015.06
+Date   : Tue May  3 11:49:25 2022
+****************************************
+
+ analysis mode: report_at_source
+ slack type: height
+
+ noise_region: above_low
+ pin name (net name)       width    height     slack
+ -----------------------------------------------------
+
+1

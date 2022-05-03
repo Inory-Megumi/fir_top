@@ -1,0 +1,13 @@
+****************************************
+Report : si_double_switching
+	-nosplit
+	-rise
+	-fall
+Design : fir_top
+Version: K-2015.06
+Date   : Tue May  3 11:49:25 2022
+****************************************
+
+The design has no cross-coupling capacitance.
+
+0
